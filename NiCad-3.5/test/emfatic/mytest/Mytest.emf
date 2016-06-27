@@ -1,0 +1,44 @@
+@namespace(uri="P", prefix="P")   //annotation
+package P;  
+
+//elements inside package P
+
+// define a class
+class B {
+  op void add(String s);
+
+  @GenModel(documentation="an annotation of an attribute.")
+  attr atype[1] b;
+  attr ctype[+] d;
+  attr btype c;
+  attr ctype[1..2] a;
+}
+
+//defien a interface
+abstract interface I {
+}
+
+//define anenumerate type
+enum E {
+  public = 0;
+  private = 1;
+}
+
+//define datatype
+datatype atype : int;
+
+datatype btype : short;
+
+datatype ctype : long;
+
+
+//define a sub-package
+@namespace(uri="SubP", prefix="SubP")
+package SubP {
+  //elements inside sub-package
+  class A {
+    !ordered attr String name;
+  }
+
+}
+

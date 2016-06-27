@@ -1,0 +1,21 @@
+<clones>
+<systeminfo processor="nicad3" system="type1changeorder2" granularity="functions-blind" threshold="0%" minlines="1" maxlines="250"/>
+<cloneinfo npcs="6" npairs="3"/>
+<runinfo ncompares="15" cputime="2"/>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="4" endline="8" pcid="1"></source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="4" endline="9" pcid="4"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="10" endline="12" pcid="2"></source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="11" endline="13" pcid="5"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="14" endline="18" pcid="3"></source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="15" endline="19" pcid="6"></source>
+</clone>
+
+</clones>

@@ -1,0 +1,18 @@
+
+bash nicad3cross functions java nicadresults/type1/automata nicadresults/type1/automata1 mytype3-2report
+
+
+bash nicad3cross functions java nicadresults/type2/automata nicadresults/type2/automatarename mytype3-2report
+
+
+
+bash nicad3cross functions java nicadresults/type2modify/automata nicadresults/type2modify/automatamodify mytype3-2report
+
+
+bash nicad3cross functions java nicadresults/type3add/automata nicadresults/type3add/automataadd mytype3-2report
+
+
+bash nicad3cross functions java nicadresults/type3remove/automata nicadresults/type3remove/automataremove mytype3-2report
+
+
+

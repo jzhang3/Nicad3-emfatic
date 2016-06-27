@@ -1,0 +1,55 @@
+<clones>
+<systeminfo processor="nicad3" system="type1changeorder2" granularity="functions-blind" threshold="0%" minlines="1" maxlines="250"/>
+<cloneinfo npcs="6" npairs="3"/>
+<runinfo ncompares="15" cputime="2"/>
+<classinfo nclasses="3"/>
+
+<class classid="1" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="4" endline="8" pcid="1">
+class StateMachine {
+  attr String name;
+  val State[*] states;
+  val Transition[*] transitions;
+}
+</source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="4" endline="9" pcid="4">
+class StateMachine { 
+  val Transition[*] transitions;
+  attr String name;
+  val State[1..*] states;
+
+}
+</source>
+</class>
+
+<class classid="2" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="10" endline="12" pcid="2">
+class State {
+  attr String label;
+}
+</source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="11" endline="13" pcid="5">
+class State {
+  !ordered attr String name;
+}
+</source>
+</class>
+
+<class classid="3" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/type1changeorder2/automata.emf" startline="14" endline="18" pcid="3">
+class Transition {
+  attr String label;
+  ref State[*] target;
+  ref State[*] source;
+}
+</source>
+<source file="test/emfatic/type1changeorder2/automata1.emf" startline="15" endline="19" pcid="6">
+class Transition {
+  attr int label;
+  ref bState[*] btarget;
+  ref aState[*] asource;
+}
+</source>
+</class>
+
+</clones>

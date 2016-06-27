@@ -1,0 +1,65 @@
+<clones>
+<systeminfo processor="nicad3" system="ocl" granularity="functions-blind" threshold="0%" minlines="1" maxlines="250"/>
+<cloneinfo npcs="57" npairs="93"/>
+<runinfo ncompares="1540" cputime="2"/>
+<classinfo nclasses="8"/>
+
+<class classid="1" nclones="12" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="10" endline="11" pcid="2"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="25" endline="26" pcid="4"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="28" endline="29" pcid="5"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="46" endline="47" pcid="7"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="49" endline="50" pcid="8"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="53" endline="54" pcid="9"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="57" endline="58" pcid="10"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="83" endline="84" pcid="14"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="6" endline="7" pcid="1"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="291" endline="292" pcid="40"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="374" endline="375" pcid="47"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="436" endline="437" pcid="56"></source>
+</class>
+
+<class classid="2" nclones="4" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="77" endline="81" pcid="13"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="165" endline="167" pcid="23"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="403" endline="405" pcid="51"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="432" endline="434" pcid="55"></source>
+</class>
+
+<class classid="3" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="90" endline="93" pcid="15"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="95" endline="98" pcid="16"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="100" endline="103" pcid="17"></source>
+</class>
+
+<class classid="4" nclones="5" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="183" endline="184" pcid="27"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="193" endline="194" pcid="29"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="196" endline="197" pcid="30"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="206" endline="207" pcid="32"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="276" endline="277" pcid="38"></source>
+</class>
+
+<class classid="5" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="186" endline="191" pcid="28"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="396" endline="401" pcid="50"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="407" endline="412" pcid="52"></source>
+</class>
+
+<class classid="6" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="238" endline="244" pcid="34"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="344" endline="350" pcid="45"></source>
+</class>
+
+<class classid="7" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="246" endline="251" pcid="35"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="389" endline="394" pcid="49"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="439" endline="444" pcid="57"></source>
+</class>
+
+<class classid="8" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/ocl/OCL.emf" startline="321" endline="327" pcid="43"></source>
+<source file="test/emfatic/ocl/OCL.emf" startline="424" endline="430" pcid="54"></source>
+</class>
+
+</clones>

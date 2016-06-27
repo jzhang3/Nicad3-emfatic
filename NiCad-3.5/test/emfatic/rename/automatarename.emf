@@ -1,0 +1,19 @@
+@namespace(uri="automatarename", prefix="automatarename")
+package automatarename;
+
+class Automata {
+  attr String name;
+  val State[*] states;
+  val Transition[*] transitions;
+}
+
+class State {
+  attr String statename;
+}
+
+class Transition {
+  attr String transitionname;
+  ref State[*] out;
+  ref State[*] in;
+}
+

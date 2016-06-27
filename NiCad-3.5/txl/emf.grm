@@ -1,0 +1,415 @@
+% TXL Emfatic 0.8.0 Grammar
+% Version 1.0, June 2015
+
+% Based on Emfatic grammar: org.eclipse.emf.emfatic.core/grammar/Emfatic.ast
+
+% Modification Log:
+
+% v1.0, Jia Zhang, June 2015, implement all rules in Emfatic.ast. Add simple annotation like @model, add escape keywords.
+
+
+% Lexical conventions of Emfatic
+tokens
+ id ... | "~\i+"  
+ % extend id such that Escaping Keywords function can be used.
+ %Sometimes it's necessary or desirable to use a keyword as the name for some model element.  
+ %This can be acheived by prefixing the name identifier with the '~' symbol.  
+ %This ability was added primarily to make it possible to represent Ecore.ecore in Emfatic, so we'll show another example from Ecore.ecore here to illustrate:
+ % class EClass extends EClassifier
+ % {
+ % // ...
+ % ~abstract : EBoolean;
+ % ~interface : EBoolean;
+ % // ...
+ % }
+
+end tokens
+
+comments
+  //
+  /* */
+end comments
+
+compounds
+ '['?'] 
+ '[ '] 
+ '['*']
+ '['+']
+ ..
+end compounds
+
+% keywords in Emfatic
+%keys
+%    'package 'abstract 'interface 'class 'extends 'import
+%    'attr 'op 'ref 'val 'enum 'true 'false
+%    'void 'throw
+    % Data Types
+%    'boolean 'Boolean
+%    'byte 'Byte
+%    'char 'Character
+%    'double 'Double
+%    'float 'Float
+%    'int 'Integer
+%    'long 'Long
+%    'short 'Short
+%    'Date 'String
+%    'Object 'Class
+%    'EObject 'EClass
+    % Class Feature Modifiers
+%    'readonly 'volatile 'transient
+%    'unsettable 'derived 'unique
+%    'ordered 'resolve 'id
+% end keys
+
+% Syntax of Emfatic 0.8.0
+ define program
+ 	[packageDecl] [importStmts] [topLevelDecls]
+ end define
+ 
+ 
+ % define package
+ define packageDecl
+ 	[annotations] 'package [qualifiedID] ';  [NL]
+ end define
+ 
+ %--------------------------------------------------------
+ define qualifiedID
+ 	[id][repeat catID]
+ end define
+ 
+ define catID
+ 	[qidSeperator][id]
+ end define
+ 
+ define qidSeperator
+ 	'. | '$
+ end define
+ 
+%----------------------------------------------------------- 
+ define stringLiteralOrQualifiedID
+ 	[stringLiteralContainer] | [qualifiedIDContainer]
+ end define
+ 
+ define stringLiteralContainer
+ 	[stringlit]
+ end define
+ 
+ define qualifiedIDContainer
+ 	[qualifiedID]
+ end define
+ 
+ 
+ %----------------------------------------------------------
+ % define annotations
+ define annotations
+ 	[repeat annotation] 
+ end define
+ 
+ define annotation
+ 	'@ [stringLiteralOrQualifiedID]  [opt annotationValue] [NL]
+ end define
+ 
+ define annotationValue
+ 	'( [keyEqualsValueList] ')
+ end define
+ 
+ define keyEqualsValueList
+ 	[list keyEqualsValue+]
+ end define
+ 
+ define keyEqualsValue
+ 	[stringLiteralOrQualifiedID] '= [stringLiteralOrQualifiedID]
+ end define
+ 
+ %-------------------------------------------------------------------
+ % define import
+ define importStmts
+ 	[repeat importStmt]
+ end define
+ 
+ define importStmt
+ 	'import [opt sourceLink] [stringLiteralOrQualifiedID] '; [NL]
+ end define
+ 
+ define sourceLink
+ 	[id] '=
+ end define
+ 
+ %---------------------------------------------------------------------
+ % define body
+ define topLevelDecls
+ 	[repeat topLevelDecl]
+ end define
+ 
+ define topLevelDecl
+ 	[annotations] [declarations] [NL]
+ end define
+ 
+ define declarations
+ 	[subPackageDecl]
+ 	| [classDecl]
+ 	| [dataTypeDecl]
+ 	| [enumDecl]
+ 	| [mapEntryDecl]
+ end define
+ 
+ %-----------------------------------------------------------
+ % define subpackage
+ define subPackageDecl
+ 	'package [id] 
+ 	'{                    [IN][NL]
+ 		[topLevelDecls]   [EX]
+ 	 '}                   [NL]
+ end define
+ 
+ % define class
+ define classDecl
+ 	[opt abstractModifier] [classKind] [id] [opt typeParamsInfo] [opt extendsClause][opt instance] 
+ 	'{                      [IN][NL]
+ 		[classMemberDecls]  [EX]
+ 	'}                      [NL]
+ end define
+ 
+ %--------------------------
+ define abstractModifier
+ 	'abstract
+ end define
+ 
+%--------------------------- 
+ define classKind
+ 	'class | 'interface
+ end define
+ 
+%----------------------------- 
+ define typeParamsInfo
+ 	'< [oneOrMoreTypeParams]'>
+ end define
+ 
+ define oneOrMoreTypeParams
+ 	[list typeParam+]
+ end define
+ 
+ define typeParam
+ 	[id] [opt typeBoundsInfo]
+ end define
+ 
+ define typeBoundsInfo
+ 	'extends [oneOrMoreTypeParamBounds]
+ end define
+ 
+ define oneOrMoreTypeParamBounds
+ 	[boundExceptWildcard] [repeat catboundExceptWildcard]
+ end define
+ 
+ define catboundExceptWildcard
+ 	'& [boundExceptWildcard]
+ end define
+ 
+ define boundExceptWildcard
+ 	[qualifiedID] [opt oneOrMoreTypeArgs]
+ end define
+ 
+ define oneOrMoreTypeArgs
+ 	'< [list typeArg+]'>
+ end define
+ 
+ define typeArg
+ 	[boundExceptWildcard] 
+ 	| [wildcard] 
+ end define
+ 
+ define wildcard
+ 	'? [opt boundInfo]
+ end define
+ 
+ define boundInfo
+ 	[extendsOrSuper] [boundExceptWildcard]
+ end define
+ 
+ define extendsOrSuper
+ 	'extends | 'super
+ end define
+ 
+ %-------------------------------------
+ define extendsClause
+ 	'extends [commaListBoundExceptWild]
+ end define
+ 
+ define commaListBoundExceptWild
+ 	[list boundExceptWildcard+]
+ end define
+ 
+ %--------------------------------------
+ define instance
+ 	': [boundExceptWildcard]
+ end define
+ 
+ %--------------------------------------
+ % there are no inner classes in EMF, there are no array types in EMF
+ define classMemberDecls
+ 	[repeat classMemberDecl] 
+ end define
+ 
+ define classMemberDecl
+ 	[annotations] [modifiers] [elements]
+ end define
+
+ 
+define elements
+	[attribute]
+	| [reference]
+	| [operation]
+end define
+
+%------------------------------------------
+define attribute
+	'attr [typeWithMulti] [id] [opt defaultValue] '; [NL]
+end define
+
+define defaultValue
+	'= [defaultValueExpr]
+end define
+
+define typeWithMulti
+	[boundExceptWildcard] [opt multiplicity]
+end define
+
+define multiplicity
+	'[ [opt multiplicityExpr]']
+end define
+
+define multiplicityExpr
+	[simpleMultiplicityExpr] [opt upperbound]
+end define
+
+define upperbound
+	'.. [simpleMultiplicityExpr]
+end define
+
+define simpleMultiplicityExpr
+	'* | '+ | '? | [integernumber]
+end define
+
+%-----------------------------------------
+define reference
+	[referenceKind] [typeWithMulti] [opt opposite] [id] '; [NL]
+end define
+
+define referenceKind
+	'ref | 'val
+end define
+
+define opposite
+	'# [id]
+end define
+
+%--------------------------------------------------------- 
+define modifiers
+	[repeat optNegatedModifier]
+end define
+
+define optNegatedModifier
+	[opt '!] [modifier]  % ! negate other modifiers, apply to unique, ordered and resolve
+end define
+
+
+define modifier
+	'readonly   % EStructuralFeature.changeable = false, apply to attribute, reference
+  | 'volatile   % EStructuralFeature.volatile = true, apply to attribute, reference
+  | 'transient  % EStructuralFeature.transient = true, apply to attribute, reference
+  | 'unsettable % EStructuralFeature.unsettable = true, apply to attribute, reference
+  | 'derived    % EStructuralFeature.derived = true, apply to attribute, reference
+  | 'unique     % ETypedElement.unique = true, apply to attribute, reference, operation, parameter
+  | 'ordered    % ETypedElement.ordered = true, apply to attribute, reference, operation, parameter
+  | 'resolve    % EReference.resolveProxies = true, apply to reference
+  | 'id         % EAttribute.iD = true, apply to attribute        
+end define
+
+%-----------------------------------------
+define defaultValueExpr
+	[boolExpr]
+	| [intExpr]
+	| [stringExpr]
+	| [charExpr]
+end define
+
+define boolExpr
+	[trueOrFalse]
+end define
+
+define trueOrFalse
+	'true | 'false
+end define
+ 
+ define intExpr
+ 	[opt '-] [integernumber]
+ end define
+ 
+ define stringExpr
+ 	[stringlit]
+ end define
+ 
+ define charExpr
+ 	[charlit]
+ end define
+ 
+%----------------------------------------
+% define operation
+define operation
+	'op [opt typeParamsInfo] [resultType] [id] '([params]') [opt throws] '; [NL]
+end define
+
+define resultType
+	[typeWithMulti] | [voidContainer]
+end define
+
+define voidContainer
+	'void
+end define
+
+define params
+	[list param]
+end define
+
+define param
+	[annotations][modifiers][typeWithMulti][id][annotations]
+end define
+
+define throws
+	'throws [commaListBoundExceptWild]
+end define
+
+%-------------------------------------------------------------------------
+define dataTypeDecl
+	[opt transientModifier] 'datatype [id] ': [stringLiteralOrQualifiedID] '; [NL]
+end define
+
+define transientModifier
+	'transient
+end define
+
+%---------------------------------------------------------------------------
+define enumDecl
+	'enum [id] 
+	'{                  [IN][NL]
+		[enumLiterals]  [EX]
+	'}                  [NL]
+end define
+
+define enumLiterals
+	[repeat enumLiteral]
+end define
+
+define enumLiteral
+	[annotations] [id] [opt enumValue] [annotations] '; [NL]
+end define
+
+define enumValue
+	'= [integernumber]
+end define
+ 
+%---------------------------------------------------------------------------
+define mapEntryDecl
+	'mapentry [id] ': [typeWithMulti] '-> [typeWithMulti] '; [NL]
+end define
+ 

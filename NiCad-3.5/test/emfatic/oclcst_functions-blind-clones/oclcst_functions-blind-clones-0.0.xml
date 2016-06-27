@@ -1,0 +1,451 @@
+<clones>
+<systeminfo processor="nicad3" system="oclcst" granularity="functions-blind" threshold="0%" minlines="1" maxlines="250"/>
+<cloneinfo npcs="49" npairs="89"/>
+<runinfo ncompares="1176" cputime="2"/>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="26" endline="27" pcid="4"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="30" endline="31" pcid="5"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="26" endline="27" pcid="4"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="53" endline="54" pcid="7"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="26" endline="27" pcid="4"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="196" endline="197" pcid="30"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="30" endline="31" pcid="5"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="53" endline="54" pcid="7"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="30" endline="31" pcid="5"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="196" endline="197" pcid="30"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="33" endline="36" pcid="6"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="238" endline="241" pcid="38"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="53" endline="54" pcid="7"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="196" endline="197" pcid="30"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="56" endline="61" pcid="8"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="84" endline="89" pcid="13"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="63" endline="67" pcid="9"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="75" endline="77" pcid="11"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="79" endline="82" pcid="12"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="165" endline="168" pcid="26"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="79" endline="82" pcid="12"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="189" endline="194" pcid="29"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="91" endline="95" pcid="14"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="97" endline="103" pcid="15"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="91" endline="95" pcid="14"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="259" endline="263" pcid="43"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="97" endline="103" pcid="15"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="259" endline="263" pcid="43"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="123" endline="126" pcid="19"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="152" endline="155" pcid="25"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="123" endline="126" pcid="19"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="199" endline="202" pcid="31"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="152" endline="155" pcid="25"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="199" endline="202" pcid="31"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="165" endline="168" pcid="26"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="189" endline="194" pcid="29"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="214" endline="216" pcid="34"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="234" endline="236" pcid="37"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="214" endline="216" pcid="34"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="243" endline="245" pcid="39"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="214" endline="216" pcid="34"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="289" endline="291" pcid="48"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="218" endline="224" pcid="35"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="226" endline="232" pcid="36"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="234" endline="236" pcid="37"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="243" endline="245" pcid="39"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="234" endline="236" pcid="37"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="289" endline="291" pcid="48"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="243" endline="245" pcid="39"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="289" endline="291" pcid="48"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47"></source>
+</clone>
+
+<clone nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45"></source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46"></source>
+</clone>
+
+</clones>

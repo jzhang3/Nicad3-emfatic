@@ -1,0 +1,357 @@
+<html>
+<head>
+<style type="text/css">
+body {font-family:Arial}
+table {background-color:white; border:0px solid white; width:95%; margin-left:auto; margin-right: auto}
+td {background-color:#b0c4de; padding:16px; border:4px solid white}
+pre {background-color:white; padding:4px}
+</style>
+<title>
+NiCad Clone Report
+</title>
+</head>
+<body>
+<h2>
+NiCad Clone Report
+</h2>
+System: ocl
+<br>
+<br>Granularity: functions-blind
+<br>Max difference threshold: 0%
+<br>Clone size: 1 - 250 lines
+<br>
+<br>Total functions-blind: 57
+<br>Clone pairs found: 93
+<br>
+<br>LCS compares: 1540 &nbsp;&nbsp;&nbsp; CPU time: 0 min 0.0 sec
+<br>
+<br>Number of  classes: 8
+<br>
+<h3>Clone class 1, 12 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 10 - 11 of test/emfatic/ocl/OCL.emf
+<pre>
+  class BagType &lt;C, O&gt;  extends CollectionType&lt;C, O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 25 - 26 of test/emfatic/ocl/OCL.emf
+<pre>
+  class ElementType {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 28 - 29 of test/emfatic/ocl/OCL.emf
+<pre>
+  class InvalidType &lt;O&gt;  extends utilities.PredefinedType&lt;O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 46 - 47 of test/emfatic/ocl/OCL.emf
+<pre>
+  class OrderedSetType &lt;C, O&gt;  extends CollectionType&lt;C, O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 49 - 50 of test/emfatic/ocl/OCL.emf
+<pre>
+  class PrimitiveType &lt;O&gt;  extends utilities.PredefinedType&lt;O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 53 - 54 of test/emfatic/ocl/OCL.emf
+<pre>
+  class SequenceType &lt;C, O&gt;  extends CollectionType&lt;C, O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 57 - 58 of test/emfatic/ocl/OCL.emf
+<pre>
+  class SetType &lt;C, O&gt;  extends CollectionType&lt;C, O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 83 - 84 of test/emfatic/ocl/OCL.emf
+<pre>
+  class VoidType &lt;O&gt;  extends utilities.PredefinedType&lt;O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 6 - 7 of test/emfatic/ocl/OCL.emf
+<pre>
+  class AnyType &lt;O&gt;  extends utilities.PredefinedType&lt;O&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 291 - 292 of test/emfatic/ocl/OCL.emf
+<pre>
+  class InvalidLiteralExp &lt;C&gt;  extends LiteralExp&lt;C&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 374 - 375 of test/emfatic/ocl/OCL.emf
+<pre>
+  class NullLiteralExp &lt;C&gt;  extends LiteralExp&lt;C&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 436 - 437 of test/emfatic/ocl/OCL.emf
+<pre>
+  class UnspecifiedValueExp &lt;C&gt;  extends OCLExpression&lt;C&gt;, utilities.TypedASTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 2, 4 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 77 - 81 of test/emfatic/ocl/OCL.emf
+<pre>
+  class TypeType &lt;C, O&gt;  extends utilities.PredefinedType&lt;O&gt; {
+
+    @GenModel(suppressedSetVisibility="true")
+    ref C[1] referredType;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 165 - 167 of test/emfatic/ocl/OCL.emf
+<pre>
+  class AssociationClassCallExp &lt;C, P&gt;  extends NavigationCallExp&lt;C, P&gt; {
+    ref C referredAssociationClass;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 403 - 405 of test/emfatic/ocl/OCL.emf
+<pre>
+  class StateExp &lt;C, S&gt;  extends OCLExpression&lt;C&gt; {
+    ref S referredState;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 432 - 434 of test/emfatic/ocl/OCL.emf
+<pre>
+  class TypeExp &lt;C&gt;  extends OCLExpression&lt;C&gt; {
+    ref C referredType;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 3, 3 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 90 - 93 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract interface ASTNode {
+    transient attr int startPosition = -1;
+    transient attr int endPosition = -1;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 95 - 98 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract interface CallingASTNode extends ASTNode {
+    transient attr int propertyStartPosition = -1;
+    transient attr int propertyEndPosition = -1;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 100 - 103 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract interface TypedASTNode extends ASTNode {
+    transient attr int typeStartPosition = -1;
+    transient attr int typeEndPosition = -1;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 4, 5 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 183 - 184 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract class OCLExpression &lt;C&gt;  extends utilities.TypedElement&lt;C&gt;, utilities.Visitable, utilitiees.ASTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 193 - 194 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract class PrimitiveLiteralExp &lt;C&gt;  extends LiteralExp&lt;C&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 196 - 197 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract class LiteralExp &lt;C&gt;  extends OCLExpression&lt;C&gt; {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 206 - 207 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract class CollectionLiteralPart &lt;C&gt;  extends utilities.TypedElement&lt;C&gt;, utilities.Visitable {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 276 - 277 of test/emfatic/ocl/OCL.emf
+<pre>
+  abstract class NumericLiteralExp &lt;C&gt;  extends PrimitiveLiteralExp&lt;C&gt; {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 5, 3 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 186 - 191 of test/emfatic/ocl/OCL.emf
+<pre>
+  class BooleanLiteralExp &lt;C&gt;  extends PrimitiveLiteralExp&lt;C&gt; {
+
+    @GenModel(documentation="self.type.name = 'Boolean'")
+    op boolean boolean_type( ecore.EDiagnosticChain diagnostics, ecore.EMap&lt;EJavaObject, EJavaObjectt&gt; context);
+    attr Boolean booleanSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 396 - 401 of test/emfatic/ocl/OCL.emf
+<pre>
+  class RealLiteralExp &lt;C&gt;  extends NumericLiteralExp&lt;C&gt; {
+
+    @GenModel(documentation="self.type.name = 'Real'")
+    op boolean real_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObject&gt;&gt; context);
+    attr Double realSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 407 - 412 of test/emfatic/ocl/OCL.emf
+<pre>
+  class StringLiteralExp &lt;C&gt;  extends PrimitiveLiteralExp&lt;C&gt; {
+
+    @GenModel(documentation="self.type.name = 'String'")
+    op boolean string_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObjecct&gt; context);
+    attr String stringSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 6, 2 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 238 - 244 of test/emfatic/ocl/OCL.emf
+<pre>
+  class CollectionRange &lt;C&gt;  extends CollectionLiteralPart&lt;C&gt; {
+
+    @GenModel(documentation="type = first.type.commonSuperType(last.type)")
+    op boolean range_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObjectt&gt; context);
+    val OCLExpression&lt;C&gt;[1] first;
+    val OCLExpression&lt;C&gt;[1] last;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 344 - 350 of test/emfatic/ocl/OCL.emf
+<pre>
+  class LetExp &lt;C, PM&gt;  extends OCLExpression&lt;C&gt; {
+
+    @GenModel(documentation="type = in.type")
+    op boolean let_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObject&gt;  context);
+    val OCLExpression&lt;C&gt; in;
+    val Variable&lt;C, PM&gt; variable;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 7, 3 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 246 - 251 of test/emfatic/ocl/OCL.emf
+<pre>
+  class EnumLiteralExp &lt;C, EL&gt;  extends LiteralExp&lt;C&gt; {
+
+    @GenModel(documentation="self.type = referredEnumLiteral.enumeration")
+    op boolean enum_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObject&gt;&gt; context);
+    ref EL referredEnumLiteral;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 389 - 394 of test/emfatic/ocl/OCL.emf
+<pre>
+  class PropertyCallExp &lt;C, P&gt;  extends NavigationCallExp&lt;C, P&gt; {
+
+    @GenModel(documentation="type = referredProperty.type")
+    op boolean property_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObjject&gt; context);
+    ref P referredProperty;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 439 - 444 of test/emfatic/ocl/OCL.emf
+<pre>
+  class VariableExp &lt;C, PM&gt;  extends OCLExpression&lt;C&gt; {
+
+    @GenModel(documentation="type = referredVariable.type")
+    op boolean var_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObject&gt;  context);
+    ref Variable&lt;C, PM&gt; referredVariable;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>Clone class 8, 2 fragments, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 321 - 327 of test/emfatic/ocl/OCL.emf
+<pre>
+  class Variable &lt;C, PM&gt;  extends utilities.TypedElement&lt;C&gt;, utilities.Visitable, utilities.TypedASTTNode {
+
+    @GenModel(documentation="initExpression-&gt;notEmpty() implies initExpression.type.conformsTo (typee)")
+    op boolean init_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObject&gt;&gt; context);
+    val OCLExpression&lt;C&gt; initExpression;
+    ref PM representedParameter;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 424 - 430 of test/emfatic/ocl/OCL.emf
+<pre>
+  class TupleLiteralPart &lt;C, P&gt;  extends utilities.TypedElement&lt;C&gt;, utilities.Visitable, utilities.TTypedASTNode {
+
+    @GenModel(documentation="attribute.type = value.type")
+    op boolean value_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap&lt;EJavaObject, EJavaObjectt&gt; context);
+    val OCLExpression&lt;C&gt; value;
+    ref P attribute;
+  }
+</pre>
+</td></tr>
+</table>
+</body>
+</html>

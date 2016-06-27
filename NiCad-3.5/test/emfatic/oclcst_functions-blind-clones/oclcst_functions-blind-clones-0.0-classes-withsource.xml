@@ -1,0 +1,315 @@
+<clones>
+<systeminfo processor="nicad3" system="oclcst" granularity="functions-blind" threshold="0%" minlines="1" maxlines="250"/>
+<cloneinfo npcs="49" npairs="89"/>
+<runinfo ncompares="1176" cputime="2"/>
+<classinfo nclasses="12"/>
+
+<class classid="1" nclones="7" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="22" endline="24" pcid="3">
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="117" endline="121" pcid="18">
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="148" endline="150" pcid="24">
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="204" endline="208" pcid="32">
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="210" endline="212" pcid="33">
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="253" endline="257" pcid="42">
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="293" endline="295" pcid="49">
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</source>
+</class>
+
+<class classid="2" nclones="4" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="26" endline="27" pcid="4">
+  abstract class TypeCS extends OCLExpressionCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="30" endline="31" pcid="5">
+  abstract class OCLExpressionCS extends CSTNode {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="53" endline="54" pcid="7">
+  abstract class ContextDeclCS extends CSTNode {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="196" endline="197" pcid="30">
+  abstract class LiteralExpCS extends OCLExpressionCS {
+  }
+</source>
+</class>
+
+<class classid="3" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="33" endline="36" pcid="6">
+  class SimpleNameCS extends OCLExpressionCS {
+    attr String value;
+    attr SimpleTypeEnum type;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="238" endline="241" pcid="38">
+  class StringLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr String stringSymbol;
+    attr String unescapedStringSymbol;
+  }
+</source>
+</class>
+
+<class classid="4" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="56" endline="61" pcid="8">
+  class PropertyContextCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    val SimpleNameCS simpleNameCS;
+    val TypeCS typeCS;
+    val InitOrDerValueCS[*] constraints;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="84" endline="89" pcid="13">
+  class OperationCS extends CSTNode {
+    val PathNameCS pathNameCS;
+    val SimpleNameCS simpleNameCS;
+    val VariableCS[*] parameters;
+    val TypeCS typeCS;
+  }
+</source>
+</class>
+
+<class classid="5" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="63" endline="67" pcid="9">
+  abstract class InitOrDerValueCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="75" endline="77" pcid="11">
+  abstract class InvOrDefCS extends CSTNode {
+    val SimpleNameCS simpleNameCS;
+  }
+</source>
+</class>
+
+<class classid="6" nclones="6" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="69" endline="73" pcid="10">
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="128" endline="134" pcid="20">
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="136" endline="140" pcid="21">
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="170" endline="174" pcid="27">
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="271" endline="275" pcid="44">
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="283" endline="287" pcid="47">
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</source>
+</class>
+
+<class classid="7" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="79" endline="82" pcid="12">
+  class OperationContextDeclCS extends ContextDeclCS {
+    val OperationCS operationCS;
+    val PrePostOrBodyDeclCS[+] prePostOrBodyDecls;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="165" endline="168" pcid="26">
+  class LetExpCS extends OCLExpressionCS {
+    val VariableCS[+] variables;
+    val OCLExpressionCS inExpression;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="189" endline="194" pcid="29">
+  class OCLMessageArgCS extends CSTNode {
+    val TypeCS typeCS;
+
+    @ExtendedMetaData(name="oclExpression")
+    val OCLExpressionCS expression;
+  }
+</source>
+</class>
+
+<class classid="8" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="91" endline="95" pcid="14">
+  class VariableCS extends CSTNode {
+    attr String name;
+    val TypeCS typeCS;
+    val OCLExpressionCS initExpression;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="97" endline="103" pcid="15">
+  class PrePostOrBodyDeclCS extends CSTNode {
+    attr PrePostOrBodyEnum kind;
+    val SimpleNameCS simpleNameCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="259" endline="263" pcid="43">
+  class CallExpCS extends OCLExpressionCS {
+    val OCLExpressionCS source;
+    attr DotOrArrowEnum accessor;
+    val SimpleNameCS simpleNameCS;
+  }
+</source>
+</class>
+
+<class classid="9" nclones="8" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="111" endline="112" pcid="16">
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="114" endline="115" pcid="17">
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="142" endline="143" pcid="22">
+  class IsMarkedPreCS extends CSTNode {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="145" endline="146" pcid="23">
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="247" endline="248" pcid="40">
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="250" endline="251" pcid="41">
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="277" endline="278" pcid="45">
+  class IteratorExpCS extends LoopExpCS {
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="280" endline="281" pcid="46">
+  class IterateExpCS extends LoopExpCS {
+  }
+</source>
+</class>
+
+<class classid="10" nclones="3" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="123" endline="126" pcid="19">
+  class DefCS extends InvOrDefCS {
+    val DefExpressionCS defExpressionCS;
+    attr boolean static = false;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="152" endline="155" pcid="25">
+  class CollectionTypeCS extends SimpleNameCS, TypeCS {
+    attr CollectionTypeIdentifierEnum collectionTypeIdentifier;
+    val TypeCS typeCS;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="199" endline="202" pcid="31">
+  class CollectionLiteralExpCS extends LiteralExpCS {
+    attr CollectionTypeIdentifierEnum collectionType;
+    val CollectionLiteralPartCS[*] collectionLiteralParts;
+  }
+</source>
+</class>
+
+<class classid="11" nclones="4" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="214" endline="216" pcid="34">
+  class PrimitiveLiteralExpCS extends LiteralExpCS {
+    attr String symbol;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="234" endline="236" pcid="37">
+  class RealLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Double realSymbol;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="243" endline="245" pcid="39">
+  class BooleanLiteralExpCS extends SimpleNameCS, PrimitiveLiteralExpCS {
+    attr Boolean booleanSymbol;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="289" endline="291" pcid="48">
+  class OperationCallExpCS extends FeatureCallExpCS {
+    attr Boolean isAtomic = "false";
+  }
+</source>
+</class>
+
+<class classid="12" nclones="2" nlines="2" similarity="100">
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="218" endline="224" pcid="35">
+  class IntegerLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Integer integerSymbol;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+</source>
+<source file="test/emfatic/oclcst/OCLCST.emf" startline="226" endline="232" pcid="36">
+  class UnlimitedNaturalLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Integer integerSymbol;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+</source>
+</class>
+
+</clones>

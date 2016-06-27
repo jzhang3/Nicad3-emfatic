@@ -1,0 +1,12 @@
+@namespace(uri="automataremove", prefix="automataremove")
+package automataremove;
+
+class StateMachine {
+  attr String name;
+  val State[*] states;
+}
+
+class State {
+  attr String label;
+}
+

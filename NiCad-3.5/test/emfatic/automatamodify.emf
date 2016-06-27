@@ -1,0 +1,19 @@
+@namespace(uri="automatamodify", prefix="automatamodify")
+package automatamodify;
+
+class StateMachine {
+  attr String name;
+  val State[*] states;
+  val Transition[*] transitions;
+}
+
+class State {
+  attr int label;
+}
+
+class Transition {
+  attr char label;
+  ref State[*] target;
+  ref State[*] source;
+}
+

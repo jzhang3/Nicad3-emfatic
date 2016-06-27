@@ -1,0 +1,447 @@
+@namespace(uri="http://www.eclipse.org/ocl/1.1.0/OCL", prefix="ocl")
+package ocl;
+
+@namespace(uri="http://www.eclipse.org/ocl/1.1.0/OCL/Types", prefix="ocl.types")
+package types {
+  class AnyType <O>  extends utilities.PredefinedType<O> {
+  }
+
+  @duplicates
+  class BagType <C, O>  extends CollectionType<C, O> {
+  }
+
+  class CollectionType <C, O>  extends utilities.PredefinedType<O>, utilities.TypedASTNode {
+
+    @GenModel(documentation="self.name = 'Collection(' + self.elementType.name + ')'")
+    op boolean collection_type_name(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="self->forAll(not oclIsInvalid())")
+    op boolean no_invalid_values(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+    op O[*] oclIterators();
+    ref C elementType;
+    readonly volatile transient attr expressions.CollectionKind[1] kind;
+  }
+
+  class ElementType {
+  }
+
+  class InvalidType <O>  extends utilities.PredefinedType<O> {
+  }
+
+  class MessageType <C, O, P>  extends utilities.PredefinedType<O> {
+
+    @GenModel(documentation="referredOperation->size() + referredSignal->size() = 1")
+    op boolean exclusive_signature(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+
+
+    op boolean operation_parameters(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+
+    op boolean signal_attributes(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+    op P[*] oclProperties();
+    ref O referredOperation;
+    ref C referredSignal;
+  }
+
+  @duplicates
+  class OrderedSetType <C, O>  extends CollectionType<C, O> {
+  }
+
+  class PrimitiveType <O>  extends utilities.PredefinedType<O> {
+  }
+
+  @duplicates
+  class SequenceType <C, O>  extends CollectionType<C, O> {
+  }
+
+  @duplicates
+  class SetType <C, O>  extends CollectionType<C, O> {
+  }
+
+  class TemplateParameterType <O>  {
+    !ordered attr String specification;
+  }
+
+  class TupleType <O, P>  extends utilities.PredefinedType<O> {
+
+   
+    op boolean tuple_type_name(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="true")
+    op boolean part_names_unique(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="feature->forAll (f | f.oclIsTypeOf(Property))")
+    op boolean features_only_properties(ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+    op P[*] oclProperties();
+  }
+
+  class TypeType <C, O>  extends utilities.PredefinedType<O> {
+
+    @GenModel(suppressedSetVisibility="true")
+    ref C[1] referredType;
+  }
+
+  class VoidType <O>  extends utilities.PredefinedType<O> {
+  }
+
+}
+
+@namespace(uri="http://www.eclipse.org/ocl/1.1.0/OCL/Utilities", prefix="ocl.util")
+package utilities {
+  abstract interface ASTNode {
+    transient attr int startPosition = -1;
+    transient attr int endPosition = -1;
+  }
+
+  abstract interface CallingASTNode extends ASTNode {
+    transient attr int propertyStartPosition = -1;
+    transient attr int propertyEndPosition = -1;
+  }
+
+  abstract interface TypedASTNode extends ASTNode {
+    transient attr int typeStartPosition = -1;
+    transient attr int typeEndPosition = -1;
+  }
+
+  abstract interface Visitable {
+    op  <T, U> T accept(U v);
+  }
+
+  abstract interface Visitor <T, C, O, P, EL, PM, S, COA, SSA, CT>  {
+    op T visitVariableExp(expressions.VariableExp<C, PM>[1] variableExp);
+    op T visitLetExp(expressions.LetExp<C, PM>[1] letExp);
+    op T visitIfExp(expressions.IfExp<C>[1] ifExp);
+    op T visitTypeExp(expressions.TypeExp<C>[1] typeExp);
+    op T visitPropertyCallExp(expressions.PropertyCallExp<C, P>[1] callExp);
+    op T visitOperationCallExp(expressions.OperationCallExp<C, O>[1] callExp);
+    op T visitAssociationClassCallExp(expressions.AssociationClassCallExp<C, P>[1] callExp);
+    op T visitIteratorExp(expressions.IteratorExp<C, PM>[1] callExp);
+    op T visitIterateExp(expressions.IterateExp<C, PM>[1] callExp);
+    op T visitUnspecifiedValueExp(expressions.UnspecifiedValueExp<C>[1] unspecExp);
+    op T visitIntegerLiteralExp(expressions.IntegerLiteralExp<C>[1] literalExp);
+    op T visitUnlimitedNaturalLiteralExp(expressions.UnlimitedNaturalLiteralExp<C>[1] literalExp);
+    op T visitRealLiteralExp(expressions.RealLiteralExp<C>[1] literalExp);
+    op T visitStringLiteralExp(expressions.StringLiteralExp<C>[1] literalExp);
+    op T visitBooleanLiteralExp(expressions.BooleanLiteralExp<C>[1] literalExp);
+    op T visitEnumLiteralExp(expressions.EnumLiteralExp<C, EL>[1] literalExp);
+    op T visitCollectionLiteralExp(expressions.CollectionLiteralExp<C>[1] literalExp);
+    op T visitCollectionItem(expressions.CollectionItem<C>[1] item);
+    op T visitCollectionRange(expressions.CollectionRange<C>[1] range);
+    op T visitTupleLiteralExp(expressions.TupleLiteralExp<C, P>[1] literalExp);
+    op T visitTupleLiteralPart(expressions.TupleLiteralPart<C, P>[1] part);
+    op T visitInvalidLiteralExp(expressions.InvalidLiteralExp<C>[1] literalExp);
+    op T visitNullLiteralExp(expressions.NullLiteralExp<C>[1] literalExp);
+    op T visitStateExp(expressions.StateExp<C, S>[1] stateExp);
+    op T visitMessageExp(expressions.MessageExp<C, COA, SSA>[1] messageExp);
+    op T visitVariable(expressions.Variable<C, PM>[1] variable);
+    op T visitExpressionInOCL(ExpressionInOCL<C, PM>[1] expression);
+    op T visitConstraint(CT[1] constraint);
+  }
+
+  abstract interface TypedElement <C>  {
+    op String getName();
+    op C getType();
+    !ordered op void setName(!ordered String[1] name);
+    !ordered op void setType(!ordered C[1] type);
+  }
+
+  @ExtendedMetaData(name="ExpressionInOcl")
+  abstract interface ExpressionInOCL <C, PM>  extends Visitable {
+    val expressions.OCLExpression<C>[1] bodyExpression;
+    val expressions.Variable<C, PM>[1] contextVariable;
+    val expressions.Variable<C, PM> resultVariable;
+    val expressions.Variable<C, PM>[*] parameterVariable;
+    !ordered val C[*] generatedType;
+  }
+
+  abstract interface PredefinedType <O>  {
+    op String[1] getName();
+    op O[*] oclOperations();
+  }
+
+}
+
+@namespace(uri="http://www.eclipse.org/ocl/1.1.0/OCL/Expressions", prefix="ocl.expr")
+package expressions {
+  class AssociationClassCallExp <C, P>  extends NavigationCallExp<C, P> {
+    ref C referredAssociationClass;
+  }
+
+  abstract class NavigationCallExp <C, P>  extends FeatureCallExp<C> {
+    val OCLExpression<C>[*] qualifier;
+    ref P navigationSource;
+  }
+
+  abstract class FeatureCallExp <C>  extends CallExp<C> {
+    attr boolean markedPre;
+  }
+
+  abstract class CallExp <C>  extends OCLExpression<C>, utilities.CallingASTNode {
+    val OCLExpression<C> source;
+  }
+
+  @ExtendedMetaData(name="OclExpression")
+  abstract class OCLExpression <C>  extends utilities.TypedElement<C>, utilities.Visitable, utilities.ASTNode {
+  }
+
+  class BooleanLiteralExp <C>  extends PrimitiveLiteralExp<C> {
+
+    @GenModel(documentation="self.type.name = 'Boolean'")
+    op boolean boolean_type( ecore.EDiagnosticChain diagnostics, ecore.EMap<EJavaObject, EJavaObject> context);
+    attr Boolean booleanSymbol;
+  }
+
+  abstract class PrimitiveLiteralExp <C>  extends LiteralExp<C> {
+  }
+
+  abstract class LiteralExp <C>  extends OCLExpression<C> {
+  }
+
+  class CollectionItem <C>  extends CollectionLiteralPart<C> {
+
+    @GenModel(documentation="type = item.type")
+    op boolean item_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C>[1] item;
+  }
+
+  abstract class CollectionLiteralPart <C>  extends utilities.TypedElement<C>, utilities.Visitable {
+  }
+
+  enum CollectionKind {
+    Set = 0;
+    OrderedSet = 1;
+    Bag = 2;
+    Sequence = 3;
+    Collection = 4;
+  }
+
+  class CollectionLiteralExp <C>  extends LiteralExp<C> {
+
+    @GenModel(documentation="kind <> CollectionKind::Collection")
+    op boolean no_collection_instances(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="kind = CollectionKind::Set implies type.oclIsKindOf(SetType)")
+    op boolean set_kind(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="kind = CollectionKind::Sequence implies type.oclIsKindOf(SequenceType)")
+    op boolean sequence_kind(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="kind = CollectionKind::Bag implies type.oclIsKindOf(BagType)")
+    op boolean bag_kind(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="type.oclAsType(CollectionType).elementType = part->iterate(p; c : Classifier = OclVoid | c.commonSuperType(p.type))")
+    op boolean element_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    attr CollectionKind kind;
+    val CollectionLiteralPart<C>[*] part;
+    readonly volatile transient attr boolean simpleRange;
+  }
+
+  class CollectionRange <C>  extends CollectionLiteralPart<C> {
+
+    @GenModel(documentation="type = first.type.commonSuperType(last.type)")
+    op boolean range_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C>[1] first;
+    val OCLExpression<C>[1] last;
+  }
+
+  class EnumLiteralExp <C, EL>  extends LiteralExp<C> {
+
+    @GenModel(documentation="self.type = referredEnumLiteral.enumeration")
+    op boolean enum_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    ref EL referredEnumLiteral;
+  }
+
+  class IfExp <C>  extends OCLExpression<C> {
+
+    @GenModel(documentation="self.condition.type.oclIsKindOf(PrimitiveType) and self.condition.type.name = 'Boolean'")
+    op boolean boolean_condition(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="self.type = thenExpression.type.commonSuperType(elseExpression.type)")
+    op boolean if_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> condition;
+    val OCLExpression<C> thenExpression;
+    val OCLExpression<C> elseExpression;
+  }
+
+  class IntegerLiteralExp <C>  extends NumericLiteralExp<C> {
+
+    @GenModel(documentation="self.type.name = 'Integer'")
+    op boolean integer_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    attr Integer integerSymbol;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+
+  abstract class NumericLiteralExp <C>  extends PrimitiveLiteralExp<C> {
+  }
+
+  class UnlimitedNaturalLiteralExp <C>  extends NumericLiteralExp<C> {
+
+    @GenModel(documentation="self.type.name = 'UnlimitedNatural'")
+    op boolean natural_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    attr Integer integerSymbol;
+    readonly volatile transient derived attr boolean[1] unlimited;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+
+  class InvalidLiteralExp <C>  extends LiteralExp<C> {
+  }
+
+  class IterateExp <C, PM>  extends LoopExp<C, PM> {
+
+    @GenModel(documentation="type = result.type")
+    op boolean iterate_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="body.type.conformsTo(result.type)")
+    op boolean body_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="self.result.initExpression->size() = 1")
+    op boolean result_init(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val Variable<C, PM> result;
+  }
+
+  abstract class LoopExp <C, PM>  extends CallExp<C> {
+
+    @GenModel(documentation="source.type.oclIsKindOf(CollectionType)")
+    op boolean source_collection(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="self.iterator->forAll(initExpression->isEmpty())")
+    op boolean loop_variable_init(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="self.iterator->forAll(type = source.type.oclAsType(CollectionType).elementType)")
+    op boolean loop_variable_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> body;
+    val Variable<C, PM>[*] iterator;
+  }
+
+  class Variable <C, PM>  extends utilities.TypedElement<C>, utilities.Visitable, utilities.TypedASTNode {
+
+    @GenModel(documentation="initExpression->notEmpty() implies initExpression.type.conformsTo (type)")
+    op boolean init_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> initExpression;
+    ref PM representedParameter;
+  }
+
+  class IteratorExp <C, PM>  extends LoopExp<C, PM> {
+
+  
+    op boolean boolean_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+   
+    op boolean collect_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="name = 'select' or name = 'reject' implies type = source.type")
+    op boolean select_reject_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+   
+    op boolean boolean_body_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+  }
+
+  class LetExp <C, PM>  extends OCLExpression<C> {
+
+    @GenModel(documentation="type = in.type")
+    op boolean let_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> in;
+    val Variable<C, PM> variable;
+  }
+
+  class MessageExp <C, COA, SSA>  extends OCLExpression<C>, utilities.CallingASTNode {
+
+   
+    op boolean operation_arguments(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    
+    op boolean signal_arguments(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+   
+    op boolean target_defines_operation(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="calledOperation->size() + sentSignal->size() = 1")
+    op boolean has_operation_or_signal(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="not target.type.oclIsKindOf(CollectionType)")
+    op boolean target_not_collection(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> target;
+    val OCLExpression<C>[*] argument;
+    val COA calledOperation;
+    val SSA sentSignal;
+  }
+
+  class NullLiteralExp <C>  extends LiteralExp<C> {
+  }
+
+  class OperationCallExp <C, O>  extends FeatureCallExp<C> {
+
+  
+    op boolean arguments_conform(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="arguments->size() = refParams->size()")
+    op boolean argument_count(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C>[*] argument;
+    ref O referredOperation;
+    volatile transient attr int operationCode;
+  }
+
+  class PropertyCallExp <C, P>  extends NavigationCallExp<C, P> {
+
+    @GenModel(documentation="type = referredProperty.type")
+    op boolean property_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    ref P referredProperty;
+  }
+
+  class RealLiteralExp <C>  extends NumericLiteralExp<C> {
+
+    @GenModel(documentation="self.type.name = 'Real'")
+    op boolean real_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    attr Double realSymbol;
+  }
+
+  class StateExp <C, S>  extends OCLExpression<C> {
+    ref S referredState;
+  }
+
+  class StringLiteralExp <C>  extends PrimitiveLiteralExp<C> {
+
+    @GenModel(documentation="self.type.name = 'String'")
+    op boolean string_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    attr String stringSymbol;
+  }
+
+  class TupleLiteralExp <C, P>  extends LiteralExp<C> {
+
+  
+    op boolean tuple_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+
+    @GenModel(documentation="part->isUnique (attribute.name)")
+    op boolean parts_unique(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val TupleLiteralPart<C, P>[*] part;
+  }
+
+  class TupleLiteralPart <C, P>  extends utilities.TypedElement<C>, utilities.Visitable, utilities.TypedASTNode {
+
+    @GenModel(documentation="attribute.type = value.type")
+    op boolean value_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    val OCLExpression<C> value;
+    ref P attribute;
+  }
+
+  class TypeExp <C>  extends OCLExpression<C> {
+    ref C referredType;
+  }
+
+  class UnspecifiedValueExp <C>  extends OCLExpression<C>, utilities.TypedASTNode {
+  }
+
+  class VariableExp <C, PM>  extends OCLExpression<C> {
+
+    @GenModel(documentation="type = referredVariable.type")
+    op boolean var_type(  ecore.EDiagnosticChain diagnostics,  ecore.EMap<EJavaObject, EJavaObject> context);
+    ref Variable<C, PM> referredVariable;
+  }
+
+}
+

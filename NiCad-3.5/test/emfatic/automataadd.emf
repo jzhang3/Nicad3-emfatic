@@ -1,0 +1,28 @@
+@namespace(uri="automataadd", prefix="automataadd")
+package automataadd;
+
+class StateMachine {
+  attr String name;
+  val State[*] states;
+  val Transition[*] transitions;
+}
+
+class State {
+  attr String label;
+}
+
+class Transition {
+  attr String label;
+  ref State[*] target;
+  ref State[*] source;
+}
+
+class Rectangle extends State {
+  attr double Edge;
+}
+
+class Circle extends State {
+  attr double Radius;
+ 
+}
+

@@ -1,0 +1,1986 @@
+<html>
+<head>
+<style type="text/css">
+body {font-family:Arial}
+table {background-color:white; border:0px solid white; width:95%; margin-left:auto; margin-right: auto}
+td {background-color:#b0c4de; padding:16px; border:4px solid white}
+pre {background-color:white; padding:4px}
+</style>
+<title>
+NiCad Clone Report
+</title>
+</head>
+<body>
+<h2>
+NiCad Clone Report
+</h2>
+System: oclcst
+<br>
+<br>Granularity: functions-blind
+<br>Max difference threshold: 0%
+<br>Clone size: 1 - 250 lines
+<br>
+<br>Total functions-blind: 49
+<br>Clone pairs found: 89
+<br>
+<br>LCS compares: 1176 &nbsp;&nbsp;&nbsp; CPU time: 0 min 0.0 sec
+<br>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 22 - 24 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PathNameCS extends TypeCS {
+    val SimpleNameCS[*] simpleNames;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 26 - 27 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class TypeCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 30 - 31 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class OCLExpressionCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 26 - 27 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class TypeCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 53 - 54 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class ContextDeclCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 26 - 27 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class TypeCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 196 - 197 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class LiteralExpCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 30 - 31 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class OCLExpressionCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 53 - 54 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class ContextDeclCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 30 - 31 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class OCLExpressionCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 196 - 197 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class LiteralExpCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 33 - 36 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class SimpleNameCS extends OCLExpressionCS {
+    attr String value;
+    attr SimpleTypeEnum type;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 238 - 241 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class StringLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr String stringSymbol;
+    attr String unescapedStringSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 53 - 54 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class ContextDeclCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 196 - 197 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class LiteralExpCS extends OCLExpressionCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 56 - 61 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PropertyContextCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    val SimpleNameCS simpleNameCS;
+    val TypeCS typeCS;
+    val InitOrDerValueCS[*] constraints;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 84 - 89 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationCS extends CSTNode {
+    val PathNameCS pathNameCS;
+    val SimpleNameCS simpleNameCS;
+    val VariableCS[*] parameters;
+    val TypeCS typeCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 63 - 67 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class InitOrDerValueCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 75 - 77 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  abstract class InvOrDefCS extends CSTNode {
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 69 - 73 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 128 - 134 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 69 - 73 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 136 - 140 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 69 - 73 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 170 - 174 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 69 - 73 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 271 - 275 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 69 - 73 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class ClassifierContextDeclCS extends ContextDeclCS {
+    val PathNameCS pathNameCS;
+    !ordered val InvOrDefCS[*] constraints;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 283 - 287 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 79 - 82 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationContextDeclCS extends ContextDeclCS {
+    val OperationCS operationCS;
+    val PrePostOrBodyDeclCS[+] prePostOrBodyDecls;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 165 - 168 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LetExpCS extends OCLExpressionCS {
+    val VariableCS[+] variables;
+    val OCLExpressionCS inExpression;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 79 - 82 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationContextDeclCS extends ContextDeclCS {
+    val OperationCS operationCS;
+    val PrePostOrBodyDeclCS[+] prePostOrBodyDecls;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 189 - 194 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLMessageArgCS extends CSTNode {
+    val TypeCS typeCS;
+
+    @ExtendedMetaData(name="oclExpression")
+    val OCLExpressionCS expression;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 91 - 95 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableCS extends CSTNode {
+    attr String name;
+    val TypeCS typeCS;
+    val OCLExpressionCS initExpression;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 97 - 103 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrePostOrBodyDeclCS extends CSTNode {
+    attr PrePostOrBodyEnum kind;
+    val SimpleNameCS simpleNameCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 91 - 95 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableCS extends CSTNode {
+    attr String name;
+    val TypeCS typeCS;
+    val OCLExpressionCS initExpression;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 259 - 263 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CallExpCS extends OCLExpressionCS {
+    val OCLExpressionCS source;
+    attr DotOrArrowEnum accessor;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 97 - 103 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrePostOrBodyDeclCS extends CSTNode {
+    attr PrePostOrBodyEnum kind;
+    val SimpleNameCS simpleNameCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 259 - 263 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CallExpCS extends OCLExpressionCS {
+    val OCLExpressionCS source;
+    attr DotOrArrowEnum accessor;
+    val SimpleNameCS simpleNameCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 111 - 112 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DerValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 114 - 115 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InitValueCS extends InitOrDerValueCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 117 - 121 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvCS extends InvOrDefCS {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 123 - 126 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefCS extends InvOrDefCS {
+    val DefExpressionCS defExpressionCS;
+    attr boolean static = false;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 152 - 155 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionTypeCS extends SimpleNameCS, TypeCS {
+    attr CollectionTypeIdentifierEnum collectionTypeIdentifier;
+    val TypeCS typeCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 123 - 126 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefCS extends InvOrDefCS {
+    val DefExpressionCS defExpressionCS;
+    attr boolean static = false;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 199 - 202 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralExpCS extends LiteralExpCS {
+    attr CollectionTypeIdentifierEnum collectionType;
+    val CollectionLiteralPartCS[*] collectionLiteralParts;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 128 - 134 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 136 - 140 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 128 - 134 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 170 - 174 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 128 - 134 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 271 - 275 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 128 - 134 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class DefExpressionCS extends CSTNode {
+    val OperationCS operationCS;
+    val VariableCS variableCS;
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 283 - 287 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 136 - 140 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 170 - 174 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 136 - 140 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 271 - 275 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 136 - 140 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class VariableExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[*] arguments;
+    val SimpleNameCS simpleNameCS;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 283 - 287 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 142 - 143 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IsMarkedPreCS extends CSTNode {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 145 - 146 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveTypeCS extends SimpleNameCS, TypeCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 148 - 150 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleTypeCS extends TypeCS {
+    val VariableCS[+] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 152 - 155 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionTypeCS extends SimpleNameCS, TypeCS {
+    attr CollectionTypeIdentifierEnum collectionTypeIdentifier;
+    val TypeCS typeCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 199 - 202 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralExpCS extends LiteralExpCS {
+    attr CollectionTypeIdentifierEnum collectionType;
+    val CollectionLiteralPartCS[*] collectionLiteralParts;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 165 - 168 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LetExpCS extends OCLExpressionCS {
+    val VariableCS[+] variables;
+    val OCLExpressionCS inExpression;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 189 - 194 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLMessageArgCS extends CSTNode {
+    val TypeCS typeCS;
+
+    @ExtendedMetaData(name="oclExpression")
+    val OCLExpressionCS expression;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 170 - 174 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 271 - 275 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 170 - 174 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IfExpCS extends OCLExpressionCS {
+    val OCLExpressionCS[1] thenExpression;
+    val OCLExpressionCS[1] elseExpression;
+    val OCLExpressionCS[1] condition;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 283 - 287 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 204 - 208 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionLiteralPartCS extends CSTNode {
+
+    @ExtendedMetaData(name="oclExpressionCS")
+    val OCLExpressionCS expressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 210 - 212 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class TupleLiteralExpCS extends LiteralExpCS {
+    val VariableCS[*] variables;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 214 - 216 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveLiteralExpCS extends LiteralExpCS {
+    attr String symbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 234 - 236 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class RealLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Double realSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 214 - 216 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveLiteralExpCS extends LiteralExpCS {
+    attr String symbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 243 - 245 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class BooleanLiteralExpCS extends SimpleNameCS, PrimitiveLiteralExpCS {
+    attr Boolean booleanSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 214 - 216 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class PrimitiveLiteralExpCS extends LiteralExpCS {
+    attr String symbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 289 - 291 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationCallExpCS extends FeatureCallExpCS {
+    attr Boolean isAtomic = "false";
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 218 - 224 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IntegerLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Integer integerSymbol;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 226 - 232 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class UnlimitedNaturalLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Integer integerSymbol;
+
+    @GenModel(suppressedGetVisibility="true")
+    readonly attr Long extendedIntegerSymbol = "0";
+    volatile transient derived attr Long longSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 234 - 236 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class RealLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Double realSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 243 - 245 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class BooleanLiteralExpCS extends SimpleNameCS, PrimitiveLiteralExpCS {
+    attr Boolean booleanSymbol;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 234 - 236 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class RealLiteralExpCS extends PrimitiveLiteralExpCS {
+    attr Double realSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 289 - 291 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationCallExpCS extends FeatureCallExpCS {
+    attr Boolean isAtomic = "false";
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 243 - 245 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class BooleanLiteralExpCS extends SimpleNameCS, PrimitiveLiteralExpCS {
+    attr Boolean booleanSymbol;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 289 - 291 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OperationCallExpCS extends FeatureCallExpCS {
+    attr Boolean isAtomic = "false";
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 247 - 248 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class NullLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 250 - 251 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class InvalidLiteralExpCS extends SimpleNameCS, LiteralExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 253 - 257 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class CollectionRangeCS extends CollectionLiteralPartCS {
+
+    @ExtendedMetaData(name="lastOclExpressionCS")
+    val OCLExpressionCS lastExpressionCS;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 293 - 295 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class OCLDocumentCS extends CSTNode {
+    !ordered val PackageDeclarationCS[*] packageDeclarations;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 271 - 275 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class LoopExpCS extends CallExpCS {
+    val VariableCS variable1;
+    val VariableCS variable2;
+    val OCLExpressionCS body;
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 283 - 287 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class FeatureCallExpCS extends CallExpCS {
+    val PathNameCS pathNameCS;
+    val OCLExpressionCS[*] arguments;
+    val IsMarkedPreCS isMarkedPreCS;
+  }
+</pre>
+</td></tr>
+</table>
+<h3>
+Clone pair, nominal size 2 lines, similarity 100%
+</h3>
+<table cellpadding=12 border=2 frame="box" width="90%">
+<tr><td>
+Lines 277 - 278 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IteratorExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+<tr><td>
+Lines 280 - 281 of test/emfatic/oclcst/OCLCST.emf
+<pre>
+  class IterateExpCS extends LoopExpCS {
+  }
+</pre>
+</td></tr>
+</table>
+</body>
+</html>
